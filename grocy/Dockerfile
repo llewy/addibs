@@ -41,7 +41,7 @@ RUN \
     && yarn global add modclean \
     \
     && git clone --branch "v3.1.3" --depth=1 \
-        https://github.com/grocy/grocy.git /var/www/grocy \
+        https://github.com/llewy/grocy.git /var/www/grocy \
     \
     && cd /var/www/grocy \
     \
