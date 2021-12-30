@@ -16,7 +16,7 @@ if bashio::config.false 'features.batteries'; then
     export GROCY_LABEL_PRINTER_RUN_SERVER=false
     export GROCY_LABEL_PRINTER_WEBHOOK=http://192.168.2.189:8014/api/print/grocy
     export GROCY_LABEL_PRINTER_HOOK_JSON=true
-    export GROCY_LABEL_PRINTER_PARAMS='font_family' => 'Source Sans Pro (Regular)'
+    export GROCY_LABEL_PRINTER_PARAMS='font_family' => 'Hack%20(Bold)'
 fi
 
 if bashio::config.false 'features.calendar'; then
