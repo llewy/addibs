@@ -1,5 +1,5 @@
 ---
-name: Grocy
+name: Grocy2
 version: dev
 slug: grocy
 description: ERP beyond your fridge! A groceries & household management solution for your home
@@ -21,11 +21,11 @@ ports:
 ports_description:
   80/tcp: Web interface (Not required for Ingress)
 options:
-  culture: en
-  currency: USD
+  culture: nl
+  currency: EUR
   entry_page: stock
   features:
-    batteries: true
+    batteries: false
     calendar: true
     chores: true
     equipment: true
@@ -42,7 +42,7 @@ options:
     stock_product_freezing: true
     stock_product_opened_tracking: true
     stock_count_opened_products_against_minimum_stock_amount: true
-  ssl: true
+  ssl: false
   certfile: fullchain.pem
   keyfile: privkey.pem
 schema:
