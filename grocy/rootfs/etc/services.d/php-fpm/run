@@ -12,11 +12,7 @@ export GROCY_ENTRY_PAGE
 bashio::log.info "Starting PHP-FPM..."
 
 if bashio::config.false 'features.batteries'; then
-    export GROCY_FEATURE_FLAG_LABEL_PRINTER=1   
-    export GROCY_LABEL_PRINTER_RUN_SERVER=false
-    export GROCY_LABEL_PRINTER_WEBHOOK=http://192.168.2.190:8014/api/print/grocy
-    export GROCY_LABEL_PRINTER_HOOK_JSON=true
-    export GROCY_LABEL_PRINTER_PARAMS=['font_family' => 'Hack (Bold)']
+    export GROCY_FEATURE_FLAG_LABEL_PRINTER=1
 fi
 
 if bashio::config.false 'features.calendar'; then
